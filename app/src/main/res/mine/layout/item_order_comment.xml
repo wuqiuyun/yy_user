@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical">
+
+            <com.yl.core.widget.CircleImageView
+                android:id="@+id/iv_photo"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="@dimen/dp_35"
+                android:src="@drawable/meiz"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/color_343434"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:orientation="vertical"
+            android:background="@drawable/shape_bg_white">
+            <TextView
+                android:id="@+id/tv_comment_name"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/color_343434"
+                android:layout_height="wrap_content"/>
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/rating_bar"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_28"
+                android:rating="5"
+                android:stepSize="1"
+                android:layout_marginLeft="-3dp"
+                android:layout_marginRight="-3dp"
+                android:isIndicator="true"
+                app:mrb_secondaryProgressTint="@color/color_FFA200"
+                app:mrb_progressTint="@color/color_FFA200"
+                style="@style/Widget.MaterialRatingBar.RatingBar"
+                android:layout_gravity="center_horizontal"/>
+
+            <TableRow
+                android:layout_width="@dimen/dp_180"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_comment1"
+                    android:text="@string/app_name"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:textColor="@color/color_343434"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/rating_bar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_16"
+                    android:rating="5"
+                    android:stepSize="1"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginRight="-3dp"
+                    android:isIndicator="true"
+                    app:mrb_secondaryProgressTint="@color/color_FFA200"
+                    app:mrb_progressTint="@color/color_FFA200"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                    android:layout_gravity="center_horizontal"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="@dimen/dp_180"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_comment2"
+                    android:text="@string/app_name"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:textColor="@color/color_343434"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/rating_bar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_16"
+                    android:rating="5"
+                    android:stepSize="1"
+                    android:layout_marginLeft="-3dp"
+                    android:layout_marginRight="-3dp"
+                    android:isIndicator="true"
+                    app:mrb_secondaryProgressTint="@color/color_FFA200"
+                    app:mrb_progressTint="@color/color_FFA200"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                    android:layout_gravity="center_horizontal"/>
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@drawable/shape_bg_efefef">
+
+                <com.yiyue.user.widget.ContainsEmojiEditText
+                    android:id="@+id/et_Comment_content"
+                    android:gravity="top"
+                    android:lineSpacingExtra="@dimen/dp_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_80"
+                    android:hint="快来和大家分享你的服务心得把~"
+                    android:textColor="@color/color_343434"
+                    android:layout_margin="@dimen/dp_5"
+                    android:textSize="@dimen/sp_12"
+                    android:maxLength="150"
+                    android:background="@null"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_height="@dimen/dp_48">
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_weight="1"
+                        android:id="@+id/recycle_view"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/iv_add"
+                        android:src="@drawable/icon_add"
+                        android:layout_width="@dimen/dp_48"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

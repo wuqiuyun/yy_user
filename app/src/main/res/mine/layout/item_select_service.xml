@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20">
+
+        <CheckBox
+            android:id="@+id/cb_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_project"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="洗剪吹"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/color_666666"
+            android:drawablePadding="@dimen/dp_10"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥12"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+</layout>

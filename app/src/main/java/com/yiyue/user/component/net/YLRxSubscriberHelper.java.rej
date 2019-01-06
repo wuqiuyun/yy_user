@@ -1,0 +1,18 @@
+diff a/app/src/main/java/com/yiyue/user/component/net/YLRxSubscriberHelper.java b/app/src/main/java/com/yiyue/user/component/net/YLRxSubscriberHelper.java	(rejected hunks)
+@@ -6,11 +6,11 @@
+ import com.yiyue.user.base.data.BaseResponse;
+ import com.yiyue.user.helper.AccountManager;
+ import com.yiyue.user.util.ThrowableUtil;
+-import com.yiyue.core.component.log.DLog;
+-import com.yiyue.core.component.net.JHttpLoggingInterceptor;
+-import com.yiyue.core.component.net.RxSubscriberHelper;
+-import com.yiyue.core.component.net.exception.ApiException;
+-import com.yiyue.core.component.net.exception.ExceptionEngine;
++import com.yl.core.component.log.DLog;
++import com.yl.core.component.net.JHttpLoggingInterceptor;
++import com.yl.core.component.net.RxSubscriberHelper;
++import com.yl.core.component.net.exception.ApiException;
++import com.yl.core.component.net.exception.ExceptionEngine;
+ 
+ import java.io.IOException;
+ import java.util.List;

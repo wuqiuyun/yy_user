@@ -1,0 +1,11 @@
+# app
+*.iml
+.gradle/
+.idea/
+build/
+app/build/
+local.properties
+output/apk/
+
+# librarys
+app/src/main/java/com/yiyue/user/model/local/greendao/

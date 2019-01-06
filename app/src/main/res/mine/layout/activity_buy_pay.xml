@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.yiyue.user.component.databind.ClickHandler" />
+
+        <variable
+            name="click"
+            type="ClickHandler" />
+    </data>
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_EFEFEF"
+        android:orientation="vertical"
+        tools:context=".module.mine.wallet.recharge.pay.PayActivity">
+
+        <com.yiyue.user.widget.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bg_color="@color/white"
+            app:title_text="@string/payment2" />
+        <TableRow
+            android:visibility="gone"
+            android:id="@+id/ll_pay_time"
+            android:gravity="center"
+            android:layout_height="@dimen/dp_40"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_0_5"
+            android:background="@color/text_bg"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请在 "
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+            <TextView
+                android:id="@+id/tv_pay_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0分0秒"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 内付款，过期需要重新下单"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+        </TableRow>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:layout_marginTop="@dimen/dp_0_5"
+            android:background="@color/white"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/tv_name"
+                android:maxWidth="@dimen/dp_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="洗护套餐"
+                android:textColor="@color/color_343434"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="@string/coupon_price"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:text="@string/payment_method_select"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/sp_12" />
+        <LinearLayout
+            android:id="@+id/ll_ordinary"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.yiyue.user.widget.UserMenuView
+                android:id="@+id/wallet_pay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@color/white"
+                android:onClick="@{click.onClick}"
+                app:left_icon="@drawable/icon_wallet"
+                app:content_text_sub_color="@color/color_999999"
+                app:content_text_sub="(￥0.0)"
+                app:right_icon="@drawable/icon_selected"
+                app:title_text="@string/wallet_yiyue" />
+
+            <com.yiyue.user.widget.UserMenuView
+                android:id="@+id/wechatpay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@color/white"
+                android:onClick="@{click.onClick}"
+                app:left_icon="@drawable/icon_wechatpay"
+                app:right_icon="@drawable/icon_selected"
+                app:title_text="@string/payment_wechat" />
+
+            <com.yiyue.user.widget.UserMenuView
+                android:id="@+id/alipay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_0_5"
+                android:background="@color/white"
+                android:onClick="@{click.onClick}"
+                app:left_icon="@drawable/icon_alipay"
+                app:right_icon="@drawable/icon_selected"
+                app:title_text="@string/alipay" />
+
+
+        </LinearLayout>
+        <com.yiyue.user.widget.UserMenuView
+            android:id="@+id/packagepay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_0_5"
+            android:background="@color/white"
+            android:onClick="@{click.onClick}"
+            app:left_icon="@drawable/icon_setmeal_nor"
+            app:right_icon="@drawable/icon_selected"
+            app:title_text="@string/packagepay"
+            app:content_text="@string/package_umber"
+            app:content_text_color="@color/dark_gray"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_80"
+            android:background="@drawable/shape_btn"
+            android:onClick="@{click.onClick}"
+            android:text="@string/payment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</layout>

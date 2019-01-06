@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.yiyue.user.widget.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            app:title_text="@string/label_title_introduction" />
+
+        <TextView
+            android:id="@+id/tv_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:padding="@dimen/dp_20"
+            android:text="我是意约平台美发师张三，08年入行从业至今已经10年了，
+一直坚持着客人的要求就是我的追求，并且不懈的努力着完善自我。擅长聆听客人的需求和想法并结合自己的专业来打
+造客户需要的效果。以及对日系发型的剪裁和线条处理有着不错的实际经验。风格偏轻盈动感强的造型，设计感强对发
+型及颜色的搭配有着丰富的经验和独特的理解。金莎美发学
+院大师剪裁班金奖。艾妮斯色彩大师班金奖。日本山野美发学校中国区学习日系剪裁并获得结业奖。"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_13" />
+    </LinearLayout>
+</layout>

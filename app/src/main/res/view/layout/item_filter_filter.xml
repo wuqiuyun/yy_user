@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.yiyue.user.component.databind.ClickHandler" />
+
+        <variable
+            name="click"
+            type="ClickHandler" />
+    </data>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/context_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:padding="@dimen/dp_10">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="@dimen/dp_66"
+                android:layout_height="@dimen/dp_26"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@drawable/text_bg_selector2"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@drawable/tv_text_selector" />
+
+            <TextView
+                android:id="@+id/tv_reset"
+                android:layout_width="@dimen/dp_66"
+                android:layout_height="@dimen/dp_26"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_toLeftOf="@id/tv_ok"
+                android:background="@drawable/text_bg_selector2"
+                android:gravity="center"
+                android:text="@string/reset"
+                android:textColor="@drawable/tv_text_selector" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

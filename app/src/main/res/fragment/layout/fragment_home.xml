@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.yiyue.user.component.databind.ClickHandler" />
+
+        <variable
+            name="click"
+            type="ClickHandler" />
+    </data>
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="@color/colorPrimary" />
+
+        <com.yiyue.user.widget.TitleView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            app:right_icon="@drawable/icon_scan"
+            app:title_text="@string/home_title" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_200">
+
+                        <com.youth.banner.Banner
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_200" />
+                        <!-- <ImageView
+                             android:layout_width="match_parent"
+                             android:layout_height="@dimen/dp_200"
+                             android:scaleType="fitXY"
+                             android:src="@drawable/home_bg" />-->
+                    </FrameLayout>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_m_30"
+                        app:cardCornerRadius="@dimen/dp_5"
+                        app:cardElevation="@dimen/dp_5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dp_20">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.yiyue.user.module.home.HomeButtonView
+                                    android:id="@+id/btn_wash_blow"
+                                    style="@style/RippleBtnTheme"
+                                    android:layout_width="@dimen/dp_0"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:onClick="@{click.onClick}"
+                                    app:icon="@drawable/icon_haircut"
+                                    app:label_color="@color/color_343434"
+                                    app:label_title="@string/home_wash_blow" />
+
+                                <com.yiyue.user.module.home.HomeButtonView
+                                    android:id="@+id/btn_hot_dyeing"
+                                    style="@style/RippleBtnTheme"
+                                    android:layout_width="@dimen/dp_0"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:onClick="@{click.onClick}"
+                                    app:icon="@drawable/icon_perm"
+                                    app:label_color="@color/color_343434"
+                                    app:label_title="@string/home_hot_dyeing" />
+
+                                <com.yiyue.user.module.home.HomeButtonView
+                                    android:id="@+id/btn_hair_extension"
+                                    style="@style/RippleBtnTheme"
+                                    android:layout_width="@dimen/dp_0"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:onClick="@{click.onClick}"
+                                    app:icon="@drawable/icon_pickhair"
+                                    app:label_color="@color/color_343434"
+                                    app:label_title="@string/home_hair_extension" />
+
+                                <com.yiyue.user.module.home.HomeButtonView
+                                    android:id="@+id/btn_nursing"
+                                    style="@style/RippleBtnTheme"
+                                    android:layout_width="@dimen/dp_0"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:onClick="@{click.onClick}"
+                                    app:icon="@drawable/icon_nursing"
+                                    app:label_color="@color/color_343434"
+                                    app:label_title="@string/home_nursing" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_15"
+                                android:orientation="horizontal">
+
+                                <com.yiyue.user.module.home.HomeButtonView
+                                    android:id="@+id/btn_leader_board"
+                                    style="@style/RippleBtnTheme"
+                                    android:layout_width="@dimen/dp_0"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:onClick="@{click.onClick}"
+                                    app:icon="@drawable/icon_rankings"
+                                    app:label_color="@color/color_343434"
+                                    app:label_title="@string/home_leaderboard" />
+
+                                <com.yiyue.user.module.home.HomeButtonView
+                                    android:id="@+id/btn_works"
+                                    style="@style/RippleBtnTheme"
+                                    android:layout_width="@dimen/dp_0"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:onClick="@{click.onClick}"
+                                    app:icon="@drawable/icon_works"
+                                    app:label_color="@color/color_343434"
+                                    app:label_title="@string/home_works" />
+
+                                <com.yiyue.user.module.home.HomeButtonView
+                                    android:id="@+id/btn_package_coupon"
+                                    style="@style/RippleBtnTheme"
+                                    android:layout_width="@dimen/dp_0"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:onClick="@{click.onClick}"
+                                    app:icon="@drawable/icon_coupon"
+                                    app:label_color="@color/color_343434"
+                                    app:label_title="@string/home_package_coupon" />
+
+                                <com.yiyue.user.module.home.HomeButtonView
+                                    android:id="@+id/btn_package"
+                                    style="@style/RippleBtnTheme"
+                                    android:layout_width="@dimen/dp_0"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:onClick="@{click.onClick}"
+                                    app:icon="@drawable/icon_setmeal"
+                                    app:label_color="@color/color_343434"
+                                    app:label_title="@string/home_package" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:gravity="center"
+                        android:text="@string/home_recommend_stylist"
+                        android:textColor="@color/color_363854" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_stylist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:clipChildren="false"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.yiyue.user.widget.viewpage.AdaptiveHeightViewPager
+                            android:id="@+id/vp_stylist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipChildren="false"
+                            android:overScrollMode="never" />
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_line" />
+
+                    <TextView
+                        android:id="@+id/tv_look_more_stylist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:drawablePadding="@dimen/dp_2"
+                        android:gravity="center"
+                        android:onClick="@{click.onClick}"
+                        android:text="@string/store_look_more"
+                        android:textColor="@color/color_363854" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_10"
+                        android:background="@color/color_EFEFEF" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:gravity="center"
+                        android:text="@string/home_recommend_store"
+                        android:textColor="@color/color_363854" />
+
+                    <include layout="@layout/layout_line" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/store_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <include layout="@layout/layout_line" />
+
+                    <TextView
+                        android:id="@+id/tv_look_more_store"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:drawablePadding="@dimen/dp_2"
+                        android:gravity="center"
+                        android:onClick="@{click.onClick}"
+                        android:text="@string/store_look_more"
+                        android:textColor="@color/color_363854" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</layout>

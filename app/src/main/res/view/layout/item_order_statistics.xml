@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--门店总计-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/alpha_95_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_1">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yl.core.widget.CircleImageView
+                android:id="@+id/civ_head_photo"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:src="@drawable/meizi" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="艾米"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_complete_order"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:gravity="center_horizontal"
+            android:text="1111单"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp_14"/>
+
+        <TextView
+            android:id="@+id/tv_performance"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:gravity="center_horizontal"
+            android:text="¥11111.00"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp_14"/>
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:gravity="center_horizontal"
+            android:text="¥11111.00"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/sp_14"/>
+
+    </LinearLayout>
+</layout>

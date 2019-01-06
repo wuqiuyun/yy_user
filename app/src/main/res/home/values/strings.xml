@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- label -->
+    <string name="label_title_mall">商城</string>
+    <string name="label_title_home">首页</string>
+    <string name="label_title_msg">交流</string>
+    <string name="label_title_mine">我的</string>
+    <string name="label_title_bundle_details">套餐详情</string>
+    <string name="label_title_introduction">查看简介</string>
+    <string name="label_title_project_list">项目列表</string>
+
+    <!-- 首页-->
+    <string name="home_title">意约</string>
+    <string name="home_wash_blow">洗剪吹</string>
+    <string name="home_hot_dyeing">烫染拉</string>
+    <string name="home_hair_extension">接发</string>
+    <string name="home_nursing">护理</string>
+    <string name="home_leaderboard">排行榜</string>
+    <string name="home_works">作品</string>
+    <string name="home_package_coupon">优惠券</string>
+    <string name="home_package">套餐</string>
+    <string name="home_service_type">服务类别：</string>
+    <string name="home_chat">聊天/打招呼</string>
+    <string name="home_service">他的服务</string>
+    <string name="home_recommend_stylist">—  优秀美发师推荐  —</string>
+    <string name="home_recommend_store">—  口碑美发店推荐  —</string>
+    <string name="stores_stylist">门店美发师</string>
+    <string name="home_collection_no">+ 关注</string>
+    <string name="home_collection">已关注</string>
+
+    <!-- 服务 -->
+    <string name="coupon_reduce">满减券</string>
+    <string name="coupon_discount">折扣券</string>
+    <string name="coupon_offset">抵用券</string>
+    <string name="coupon_bundle">套餐券</string>
+    <string name="coupon_receive">立即领取</string>
+    <string name="bundle_haircut">洗剪吹</string>
+    <string name="bundle_wash">洗吹</string>
+    <string name="bundle_nursing">护理</string>
+    <string name="bundle_combination">染烫护组合</string>
+    <string name="bundle_use_count">可用次数:</string>
+    <string name="bundle_include">套餐包含：</string>
+    <string name="bundle_type01">洗剪吹套餐</string>
+    <string name="bundle_type02">洗吹套餐</string>
+    <string name="bundle_type03">护理套餐</string>
+    <string name="bundle_type04">染烫拉套餐</string>
+    <string name="coupon_use">立即使用</string>
+    <string name="ordre_confirm">确认订单</string>
+    <string name="ordre_commit">提交订单</string>
+    <string name="coupon_end">今日抢光</string>
+    <string name="coupon_single">单项套餐</string>
+    <string name="coupon_multiple">多项套餐</string>
+    <string name="coupon_stylist">美&#160;&#160;发&#160;&#160;师：%s</string>
+
+    <string name="score">评分：</string>
+    <string name="score_value">%s分</string>
+    <string name="price">洗剪吹￥%s</string>
+    <string name="package_umber">(剩余次数:%s次)</string>
+    <string name="call">电话</string>
+    <string name="stylist_reservation">立即预约</string>
+    <string name="stylist_reservation2">预约</string>
+    <string name="bundle_type">套餐类型：</string>
+    <string name="bundle_content">套餐内容：</string>
+    <string name="bundle_amount">可用次数：</string>
+    <string name="bundle_validity_period">有效期限：</string>
+    <string name="pay_money">应付：</string>
+    <string name="buy_bundle">购买套餐</string>
+    <string name="total_price">总价：</string>
+    <string name="selection_time">选择时间</string>
+    <string name="selection_store">先选门店</string>
+    <string name="selection_store2">选择门店</string>
+    <string name="selection_coupons">选择优惠劵</string>
+
+    <!--  -->
+    <string name="bundle_times">可用次数：%s次</string>
+    <string name="bundle_content2">套餐包含：%s</string>
+
+    <!-- 作品详情-->
+    <string name="opus_page">%1$d/%2$d</string>
+
+    <!--排行榜提示信息-->
+    <string name="leaderboard_tips">此排行榜单基于意约严格考核与认证、用户实际反馈数据综合考虑推荐技术大牛</string>
+    <!--套餐购买须知-->
+    <string name="buy_package_info">购买须知</string>
+    <string name="buy_package_date">有效期</string>
+    <string name="buy_package_date2">套餐自购买成功开始生效,有效期:永久有效</string>
+    <string name="buy_package_remind">规则提醒</string>
+    <string name="buy_package_remind2">1、购买套餐不支持优惠劵。\n2、套餐购买成功后,将以套餐劵的形式发放至账户个人中心优惠劵中。\n3、预约美发师下单,每次仅能使用一张套餐劵。套餐仅限该美发师使用。</string>
+    <string name="buy_package_use">使用方式</string>
+    <string name="buy_package_use2">在个人中心优惠劵中使用套餐劵直接下单</string>
+    <string name="buy_package_refund">退款须知</string>
+    <string name="buy_package_refund2">1、本套餐支持退款;\n2、若无使用,则按照支付价格全部退回;若有部分使用,则按照项目原价计算退款差额;\n3、退款金额在受理后会返还至您的账号;\n4、如需退款请联系客服热线:0755-81707080;
+        </string>
+
+    <!--接单量-->
+    <string name="total_order_number">"(总接单%s)"</string>
+    <string name="month_order_number">"月接单%s"</string>
+
+</resources>

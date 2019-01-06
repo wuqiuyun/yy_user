@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 订单 -->
+    <string name="order_comment_look">查看评价</string>
+    <string name="order_comment">评价</string>
+    <string name="order_current_apply">当前申请：</string>
+    <string name="order_handling_fee">手&#160;&#160;续&#160;&#160;费：</string>
+    <string name="order_apply_reason">申请原因：</string>
+    <string name="order_date_cancel">取消时间：</string>
+    <string name="order_amount_refund">退回金额：</string>
+    <string name="order_date_refund">退款时间：</string>
+    <string name="order_refund_scale">(项目价格*%s)</string>
+
+    <!-- 优惠券 -->
+    <string name="coupon_price">￥%s</string>
+    <string name="coupon_amount">满%s使用</string>
+    <string name="coupon_amount2">满%s减%s</string>
+    <string name="coupon_finished">今日抢光</string>
+    <string name="coupon_stylist_limit">仅限美发师%s使用</string>
+    <string name="coupon_reduction_date">%s—%s</string>
+
+    <string name="item_deduction">已抢：%s</string>
+    <string name="item_deduction_2">折券</string>
+    <string name="item_discount">折折扣劵</string>
+    <string name="item_deduction_no_more">今日抢光</string>
+    <string name="item_get">立即领取</string>
+    <string name="item_discount_date">%s到期&#160;&#160;%s—%s可用</string>
+    <string name="item_get2">已&#160;领&#160;取</string>
+
+    <string name="item_coupon_deduction">元抵用劵</string>
+    <string name="item_deduction_date">%s到期</string>
+
+    <string name="coupon_package_content">套餐包含:%s&#160;&#160;永久有效</string>
+
+    <string name="coupon_package_content2">套餐包含:%s</string>
+    <string name="coupon_package_info">原价%s元/次,套餐现价%s元/次,仅限美发师%s可用</string>
+    <string name="coupon_package_costprice">原价￥%s</string>
+
+    <string name="you_recommend_hairdresser">·为您精选以下美发师·</string>
+    <string name="not_data">暂无相关数据</string>
+</resources>

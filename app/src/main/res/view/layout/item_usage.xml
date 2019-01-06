@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yl.core.widget.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_50"
+                android:layout_weight="1"
+                android:src="@drawable/meiz"/>
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_stylist_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_13"
+                    android:text="美发师: 晴天"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:id="@+id/tv_store_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_13"
+                    android:text="门     店: 杀马特基地"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:id="@+id/tv_coupons_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_13"
+                    android:text="套餐劵: [多项套餐]染发-长发-巴黎欧莱雅"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/sp_13"
+                android:text="完成时间: 2018.11.28/13:06"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_5"
+                android:id="@+id/tv_appointment_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/sp_13"
+                android:text="完成时间: 2018.11.28/13:06"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
